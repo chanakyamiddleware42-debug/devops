@@ -5,7 +5,7 @@
     CORE: "Devops with AWS"
     DURATION: "140"
     TRAINER: "sivakumar reddy"
-# tasks:
+ tasks:
 # - name: print vars
 #  vars:
 #      CORE: "ANSIBLE"

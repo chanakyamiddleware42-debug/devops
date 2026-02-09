@@ -5,10 +5,10 @@
     CORE: "Devops with AWS"
     DURATION: "140"
     TRAINER: "sivakumar reddy"
-  tasks:
-  - name: print vars
-    vars:
-      CORE: "ANSIBLE"
+# tasks:
+ # - name: print vars
+  #  vars:
+   #      CORE: "ANSIBLE"
     ansible.builtin.debug:
       msg: "core is: {{ CORE }}, trainer was {{ TRAINER }}"
   vars_prompt:

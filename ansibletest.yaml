@@ -12,7 +12,7 @@
 #  vars:
 #      CORE: "ANSIBLE"
     ansible.builtin.debug:
-      msg: "core is: {{ CORE }}, trainer was {{ TRAINER }}"
+      msg: "core is: {{ CORE }}"
   vars_prompt:
   - name: promot_bars
     prompt: Please enter name

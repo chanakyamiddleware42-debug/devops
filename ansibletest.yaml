@@ -20,8 +20,9 @@
 
 # 1.arg:wq
 # 2. tasks:wq
-# 3. vars_file
+# 3. vars_yamlfile
 # 4. vars
-
+# 5. inventory
+# 6.prompt
     
 

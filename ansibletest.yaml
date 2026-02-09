@@ -6,7 +6,7 @@
     DURATION: "140"
     TRAINER: "sivakumar reddy"
  tasks:
-# - name: print vars
+ - name: print vars
 #  vars:
 #      CORE: "ANSIBLE"
     ansible.builtin.debug:

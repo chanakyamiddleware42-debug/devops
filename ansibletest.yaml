@@ -11,4 +11,9 @@
       CORE: "ANSIBLE"
     ansible.builtin.debug:
       msg: "core is: {{ CORE }}, trainer was {{ TRAINER }}"
+  vars_prompt:
+  - name: promot_bars
+    prompt: Please enter name
+    private: false
+    
 

@@ -21,8 +21,9 @@
 # 1.arg:wq
 # 2. tasks:wq
 # 3. vars_yamlfile
-# 4. vars
-# 5. inventory
-# 6.prompt
+# 4. prompt
+# 5. vars
+# 6. inventory
+# 
     
 

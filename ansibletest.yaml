@@ -5,7 +5,7 @@
     CORE: "Devops with AWS"
     DURATION: "140"
     TRAINER: "sivakumar reddy"
-  vars_file: 
+  vars_files: 
   - core.yaml 
   tasks:
   - name: print vars

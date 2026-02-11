@@ -7,5 +7,5 @@
   - name: hhhh
     ansible.builtin.debug:
       msg: "yes, we have more seesions"
-    when: NUMBEROFSEESIONS = 7
+    when: NUMBEROFSEESIONS == 7
   

@@ -1,0 +1,17 @@
+- name: error
+  hosts: local
+  connection: local
+  tasks:
+  - name: error handling
+     ansible.builtin.shell: id puthach
+     register: output
+     ignore_errors: true
+
+  - name: print
+      ansible.builtin.debug:
+        msg: " output "   
+
+  - name: usercreation
+    ansible.builtin.shell: useradd puthach
+    when: output.rc !=0
+       

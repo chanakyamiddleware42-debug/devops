@@ -3,7 +3,7 @@
   connection: local
   tasks:
   - name: commandvsshell
-    ansible.builtin.command: cat /etc/passwd | grep ec2-user
+    ansible.builtin.shell: cat /etc/passwd | grep ec2-user
     register: output
   - name: printfacts
     ansible.builtin.debug:

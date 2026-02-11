@@ -6,7 +6,7 @@
     ansible.builtin.dnf:
       name: httpd
       state: present
-      register: httpd_install_result
+    register: httpd_install_result
 
   - name: httpd_result
     ansible.builtin.debug:

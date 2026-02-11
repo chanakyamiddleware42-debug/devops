@@ -2,6 +2,6 @@
   hosts: local
   connection: local
   tasks: 
-  - name: filterdisplay
+  - name: greeting
     ansible.builtin.debug:
     msg: "Hi {{ Greeting | default ('chanakya') }}"

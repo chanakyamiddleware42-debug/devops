@@ -13,3 +13,18 @@
     ansible.builtin.debug:
       msg: "installation is completed"
     when: httpd_install_result.rc == 0
+
+  - name: httpservice 
+    ansible.builtin.service:
+      name: httpd
+      state: restarted
+    register: httpd_restart_result
+
+  - name: httpd_result
+    ansible.builtin.debug:
+      msg: "start is completed"
+    when: httpd_install_result.rc == 0
+
+
+
+

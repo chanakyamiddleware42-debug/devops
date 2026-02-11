@@ -1,7 +1,7 @@
 - name: error
   hosts: local
   connection: local
-  become: true
+  become: yes
   tasks:
   - name: error handling
     ansible.builtin.shell: id puthach

@@ -5,4 +5,6 @@
   - name: commandvsshell
     ansible.builtin.command: cat /etc/passwd
     register: output
-    
+  - name: printfacts
+    ansible.builtin.debug:
+      msg: " output " 

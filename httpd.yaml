@@ -3,7 +3,7 @@
   connection: local
   tasks:
   - name: httpservice installation
-    ansible.builtin.package:
+    ansible.builtin.dnf:
       name: httpd
       state: present
       register: httpd_install_result

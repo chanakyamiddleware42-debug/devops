@@ -3,9 +3,9 @@
   connection: local
   tasks:
   - name: error handling
-     ansible.builtin.shell: id puthach
-     register: output
-     ignore_errors: true
+    ansible.builtin.shell: id puthach
+    register: output
+    ignore_errors: true
 
   - name: print
       ansible.builtin.debug:

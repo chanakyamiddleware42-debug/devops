@@ -1,0 +1,35 @@
+- name: filter
+  hosts: local
+  connection: local
+  vars:
+    topics: sunil, naveen, ravi
+     my_dict:
+       key1: value1
+       key2: value2
+       key3: value3
+    
+  tasks: 
+    - name: greeting
+      ansible.builtin.debug:
+        msg: "Hi {{ Greeting | default ('chanakya') }}"
+
+    - name: split
+      ansible.builtin.debug:
+        msg: "{{ topics | split(',') }}"
+        # listjojocomma: "{{ 'jojo is, a' | split(',') }}"
+    
+    - name: dictonary
+      ansible.builtin.debug:
+        msg: "{{  my_dict | dict2items }}"
+
+
+# vars:
+#           my_dict:
+#             key1: value1
+#             key2: value2
+#             key3: value3
+
+
+#                - name: Convert dictionary to a list of items
+#           set_fact:
+#             my_list: "{{ my_dict | dict2items }}"

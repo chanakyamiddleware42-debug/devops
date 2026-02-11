@@ -1,6 +1,6 @@
 - name: argu
   hosts: local 
-  connection: all 
+  connection: local 
   tasks:
   - name: jjj
     vars:

@@ -33,7 +33,7 @@
      
   - name: IP_test_result
     ansible.builtin.debug:
-      msg: "{{ Myip | ansible.utils.ip4 }}"
+      msg: "{{ Myip | ansible.utils.ipv4 }}"
 
 
 

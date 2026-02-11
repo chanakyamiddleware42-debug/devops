@@ -5,6 +5,7 @@
   - name: commandvsshell
     ansible.builtin.shell: cat /etc/passwd | grep ec2-user
     register: output
+
   - name: printfacts
     ansible.builtin.debug:
-      msg: " output " 
+      msg: "{{ output }} " 

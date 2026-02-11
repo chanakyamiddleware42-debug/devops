@@ -1,5 +1,5 @@
 - name: Write hostname
-  hosts: all
+  hosts: local
   tasks:
   - name: write hostname using jinja2
     ansible.builtin.template:

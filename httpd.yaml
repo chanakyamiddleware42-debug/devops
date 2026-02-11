@@ -12,6 +12,4 @@
   - name: httpd_result
     ansible.builtin.debug:
       msg: "installation is completed"
-    when: httpd_install_result is  succeeded
-
-
+    when: httpd_install_result.rc == 0

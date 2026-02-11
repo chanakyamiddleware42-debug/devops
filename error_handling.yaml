@@ -13,5 +13,5 @@
 
   - name: usercreation
     ansible.builtin.shell: useradd puthach
-    when: output.rc !=0
+    when: output.rc != 0
        

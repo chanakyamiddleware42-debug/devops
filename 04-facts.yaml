@@ -9,4 +9,4 @@
   - name: RRR
     ansible.builtin.debug:
       msg: " yes, redhat"
-    when: ansible_facts.os_family == "RedHat"
+    when: ansible_facts.distribution == "RedHat"

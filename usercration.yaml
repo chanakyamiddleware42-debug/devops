@@ -4,5 +4,5 @@
   tasks:
   - name: user creation
     ansible.builtin.user:
-    name: puthach
-    comment: puthach
+      name: puthach
+      comment: puthach

@@ -4,5 +4,5 @@
   tasks:
   - name: commandvsshell
     ansible.builtin.command: cat /etc/passwd
-      register: "output"
+      register: output
     

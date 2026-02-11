@@ -14,5 +14,10 @@
 
   - name: usercreation
     ansible.builtin.shell: useradd puthach
+    register: input
     when: output.rc != 0
+
+  - name: print
+    ansible.builtin.debug:
+      msg: "{{ input }}"
        

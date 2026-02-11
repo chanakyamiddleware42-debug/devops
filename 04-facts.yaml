@@ -1,0 +1,13 @@
+- name:
+  hosts: local
+  connection: local
+  tasks:
+  - name: redhat
+    ansible.builtin.debug:
+      msg: " {{ ansible_facts }}"
+  
+  - name: RRR
+    ansible.builtin.debug:
+      msg: " yes, redhat"
+    when: ansible_facts.distribution == RedHat
+    

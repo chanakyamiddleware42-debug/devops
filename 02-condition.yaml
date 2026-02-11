@@ -1,0 +1,11 @@
+- name:
+  hosts: local
+  connection: local
+  vars:
+    NUMBEROFSEESIONS: 7
+  tasks:
+  - name: hhhh
+    ansible.builtin.debug:
+      msg: "yes, we have more seesions"
+    when: NUMBEROFSEESIONS > 7
+  

@@ -1,0 +1,7 @@
+- name: argu
+  hosts: local 
+  connection: all 
+  tasks:
+  - name: jjj
+    ansible.builtin.debug:
+    msg: "{{ Devops }}"  

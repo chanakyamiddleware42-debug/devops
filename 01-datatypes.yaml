@@ -1,0 +1,23 @@
+- name: datatypes
+  hosts: local
+  connection: local
+  vars:
+    PROGRAM: "Devops with AWS" # string
+    DURATION: 140 # int/number
+    IS_LIVE: true # bool
+    DETAILS: #map/dic  {}
+      MONTHS: 4
+      TRAINER: sivaKumarreddy
+    TOPICS: 
+      - linux
+      - shell
+      - Ansible
+  tasks:
+  - name: print datatypes
+    ansible.bultin.debug:
+      msg: |
+        Program: {{ PROGRAM }}
+        Duration: {{ DURATION }}
+        IS Live?: {{ IS_LIVE }}
+        Details: {{ DETAILS }}
+        Topics: {{ TOPICS }}

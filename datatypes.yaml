@@ -1,0 +1,23 @@
+- name: jjj
+  hosts: local
+  connection: local
+  vars: 
+      PROGRAM: "aws with Devops"
+      DURATION: 140
+      IS_LIVE: true
+      TRAINER:
+        one: "sivakumar"
+        second: "reddy"
+      TOPICS:
+      - shell
+      - ansible
+      - aws
+  tasks:
+  - name: kkkk
+    ansible.builtin.debug:
+      msg: |
+        program: {{ PROGRAM }}
+        duration: {{ DURATION }}
+        is_live?: {{ IS_LIVE }}
+        trainer: {{ TRAINER }}
+        topics: {{ TOPICS }}

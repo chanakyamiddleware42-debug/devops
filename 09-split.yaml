@@ -1,0 +1,13 @@
+- name: filter
+  hosts: local
+  connection: local
+  vars:
+    topic: sunil, naveen, ravi
+  tasks: 
+    - name: greeting
+      ansible.builtin.debug:
+        msg: "Hi {{ Greeting | default ('chanakya') }}"
+
+    - name: split
+      ansible.builtin.debug:
+        msg: 'Hi "{{ topic | splitS(,)" }}'

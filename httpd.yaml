@@ -1,6 +1,7 @@
 - name: httpd
   hosts: local
   connection: local
+  become: true
   tasks:
   - name: httpservice installation
     ansible.builtin.dnf:
@@ -10,7 +11,7 @@
 
   - name: httpd_result
     ansible.builtin.debug:
-      msg: installation
-    when: httpd_install_result is success 
+      msg: "installation is completed"
+    when: httpd_install_result is  succeeded
 
 

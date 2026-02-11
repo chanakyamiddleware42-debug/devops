@@ -8,8 +8,8 @@
     ignore_errors: true
 
   - name: print
-      ansible.builtin.debug:
-        msg: " output "   
+    ansible.builtin.debug:
+      msg: " output "   
 
   - name: usercreation
     ansible.builtin.shell: useradd puthach

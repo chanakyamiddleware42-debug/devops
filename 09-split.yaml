@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    topic: sunil, naveen, ravi
+    topics: sunil, naveen, ravi
   tasks: 
     - name: greeting
       ansible.builtin.debug:
@@ -10,5 +10,5 @@
 
     - name: split
       ansible.builtin.debug:
-        msg: 'Hi "{{ topic | split(',') }}"
+        msg: "{{ topics | split(',') }}"
         # listjojocomma: "{{ 'jojo is, a' | split(',') }}"

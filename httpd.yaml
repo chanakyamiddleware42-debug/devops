@@ -13,6 +13,9 @@
     ansible.builtin.debug:
       msg: "installation is completed"
     when: httpd_install_result.rc == 0
+    
+  - name: httpd_enables
+    ansible.builtin.sheell: systemctl enable httpd.service 
 
   - name: httpservice 
     ansible.builtin.service:

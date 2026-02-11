@@ -3,5 +3,6 @@
   connection: all 
   tasks:
   - name: jjj
+    vars:
     ansible.builtin.debug:
-    msg: "{{ Devops }}"  
+      msg: "{{ Devops }}"  

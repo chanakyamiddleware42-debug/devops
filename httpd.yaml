@@ -1,0 +1,16 @@
+- name: httpd
+  hosts: local
+  connection: local
+  tasks:
+  - name: httpservice installation
+    ansible.builtin.package:
+      name: httpd
+      state: present
+      register: httpd_install_result
+
+  - name: httpd_result
+    ansible.builtin.debug:
+      msg: installation
+    when: httpd_install_result is success 
+
+

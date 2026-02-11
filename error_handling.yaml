@@ -10,7 +10,7 @@
 
   - name: print
     ansible.builtin.debug:
-      msg: " output "   
+      msg: "{{ output }}"   
 
   - name: usercreation
     ansible.builtin.shell: useradd puthach

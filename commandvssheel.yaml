@@ -1,0 +1,8 @@
+- name: sheelvscommand
+  hosts: local
+  connection: local
+  tasks:
+  - name: commandvsshell
+    ansible.builtin.command: cat /etc/passwd
+      register: "output"
+    

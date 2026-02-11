@@ -10,4 +10,5 @@
 
     - name: split
       ansible.builtin.debug:
-        msg: 'Hi "{{ topic | splitS(,)" }}'
+        msg: 'Hi "{{ topic | split(',') }}"
+        # listjojocomma: "{{ 'jojo is, a' | split(',') }}"

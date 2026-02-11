@@ -11,7 +11,7 @@
     - { name: "nginx", state: "absent" }
     - { name: "mysql", state: "present" }
     - { name: "zip", state: "absent" }
-    - { nam: "mysql", state: "restart"}
+    - { name: "mysql", state: "restart"}
 
   - name: 
     ansible.builtin.debug:

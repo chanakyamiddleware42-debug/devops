@@ -31,7 +31,7 @@
     when: httpd_install_result.rc == 0
 
      
-- name: IP_test_result
+  - name: IP_test_result
     ansible.builtin.debug:
       msg: "{{ Myip | ansible.utils.ip4 }}"
 

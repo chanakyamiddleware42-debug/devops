@@ -8,4 +8,13 @@
 
   - name: printfacts
     ansible.builtin.debug:
-      msg: "{{ output }} " 
+      msg: "{{ output }} "
+  - name: lsoutput
+    ansible.builtin.shell: ls -lrth > f.txt
+    register: info
+
+  - name:
+    ansible.builtin.debug: 
+      msg: " {{ info }}"
+       
+
